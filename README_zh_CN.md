@@ -11,7 +11,7 @@ Macmon
   <img alt="PowerMetrics" src="https://img.shields.io/badge/Data-powermetrics-orange">
 </p>
 
-⸻
+---
 
 项目简介
 
@@ -21,7 +21,7 @@ Macmon 是一个运行在 macOS 终端中的 Apple Silicon 硬件监控工具，
 
 本项目的定位是一个偏向 Apple Silicon 性能监控 + 终端可视化面板 的轻量级工具。
 
-⸻
+---
 
 功能特性
 
@@ -67,7 +67,7 @@ GPU 与 ANE 监控
 * 支持 Combined Power
 * 支持 P-Core / E-Core 分离频率显示
 
-⸻
+---
 
 技术栈
 
@@ -82,10 +82,11 @@ CPU 使用率	psutil
 硬件信息	ioreg
 系统平台	macOS Apple Silicon
 
-⸻
+---
 
 项目结构
 
+```
 .
 ├── main.py                     # 程序启动入口
 ├── requirements.txt            # Python 依赖列表
@@ -110,8 +111,9 @@ CPU 使用率	psutil
 │
 └── scripts/                    # 辅助脚本
     └── run.sh                  # 启动脚本
+```
 
-⸻
+---
 
 运行环境
 
@@ -125,7 +127,7 @@ CPU 使用率	psutil
 
 由于功耗和频率数据依赖 Apple 的 powermetrics，本项目主要面向 Apple Silicon Mac。Intel Mac、Windows 或 Linux 无法完整使用本项目的功耗与频率监控功能。
 
-⸻
+---
 
 安装依赖
 
@@ -138,7 +140,7 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 
-⸻
+---
 
 启动项目
 
@@ -158,7 +160,7 @@ python main.py
 
 chmod +x scripts/run.sh
 
-⸻
+---
 
 刷新频率设置
 
@@ -198,7 +200,7 @@ powermetrics -i 500
 
 不建议设置得过低，否则 powermetrics 本身可能产生较高 CPU 占用。
 
-⸻
+---
 
 数据来源说明
 
@@ -238,7 +240,7 @@ ioreg
 
 用于读取部分 Apple Silicon 硬件、电池和传感器相关信息。
 
-⸻
+---
 
 常见问题
 
@@ -270,7 +272,7 @@ Control+C 退出是否正常？
 
 正常。项目会捕获 KeyboardInterrupt，将其视为正常退出，不应输出 Python Traceback。
 
-⸻
+---
 
 开发路线图
 
@@ -286,7 +288,7 @@ Control+C 退出是否正常？
 * 配置文件自定义布局
 * 更多 Apple Silicon 型号适配
 
-⸻
+---
 
 参考项目
 
@@ -297,7 +299,7 @@ Control+C 退出是否正常？
 * Apple powermetrics
 * macOS system utilities
 
-⸻
+---
 
 许可
 
