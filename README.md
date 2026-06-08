@@ -90,6 +90,7 @@ Platform	macOS Apple Silicon
 
 Project Structure
 
+```
 .
 ├── main.py                     # Application entry point
 ├── requirements.txt            # Python dependencies
@@ -114,6 +115,7 @@ Project Structure
 │
 └── scripts/                    # Helper scripts
     └── run.sh                  # Launch script
+```
 
 ---
 
