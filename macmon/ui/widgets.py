@@ -93,8 +93,8 @@ def cpu_panel(cpu: dict) -> Panel:
     cores = cpu.get("cores", [])
     header = Text()
     header.append(f"Total {cpu.get('total', 0):.0f}%  ", style=TEXT_STYLE)
-    header.append(f"P {cpu.get('p_avg', 0):.0f}% @ {fmt_freq(cpu.get('p_freq'))}  ", style=CPU_P_STYLE)
-    header.append(f"E {cpu.get('e_avg', 0):.0f}% @ {fmt_freq(cpu.get('e_freq'))}", style=CPU_E_STYLE)
+    header.append(f"E {cpu.get('e_avg', 0):.0f}% @ {fmt_freq(cpu.get('e_freq'))}  ", style=CPU_E_STYLE)
+    header.append(f"P {cpu.get('p_avg', 0):.0f}% @ {fmt_freq(cpu.get('p_freq'))}", style=CPU_P_STYLE)
 
     grid = Table.grid(expand=True)
     grid.add_row(header)
